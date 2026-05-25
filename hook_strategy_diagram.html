@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: transparent;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .label-top {
+    font-size: 11px;
+    font-weight: 600;
+    color: #5a7a2a;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    align-self: flex-start;
+    margin-left: 60px;
+    margin-bottom: 10px;
+  }
+
+  .diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .row {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .box {
+    background: white;
+    border: 2px solid #c5d9f0;
+    border-radius: 10px;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #2a4a8a;
+    min-width: 140px;
+    flex: 1;
+    max-width: 160px;
+  }
+
+  .box.format {
+    min-width: 180px;
+    max-width: 220px;
+    flex: unset;
+  }
+
+  .hook-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2a4a9a;
+    margin: 4px 0;
+  }
+
+  .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    color: #6a8aba;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+<div class="label-top">Strategy</div>
+
+<div class="diagram">
+
+  <div class="row">
+    <div class="box">Micro-persona</div>
+    <div class="box">Motivator</div>
+    <div class="box">Benefit</div>
+  </div>
+
+  <svg width="460" height="30" viewBox="0 0 460 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M70 2 L70 15 L230 15 L230 28" stroke="#7a9aba" stroke-width="1.8" fill="none"/>
+    <path d="M230 2 L230 15" stroke="#7a9aba" stroke-width="1.8" fill="none"/>
+    <path d="M390 2 L390 15 L230 15" stroke="#7a9aba" stroke-width="1.8" fill="none"/>
+  </svg>
+
+  <div class="box format">Format</div>
+
+  <div class="arrow">↓</div>
+
+  <div class="hook-title">The hook</div>
+
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="box">Visual action</div>
+    <div class="box">Voiceover</div>
+    <div class="box">Header caption</div>
+  </div>
+
+</div>
+
+</body>
+</html>
